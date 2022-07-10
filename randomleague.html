@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RANDOMLEAGUE</title>
+
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- randomleague CSS -->
+    <link rel="stylesheet" href="randomleague.css">
+
+    <!-- memory game JS -->
+    <script src="randomleague.js"></script>
+
+
+</head>
+<body>
+<div class="achtergrond" >
+    <div class="h1">RANDOM LEAGUE GENERATOR DOOR ALBERIC LOOS</div>
+    <div class="bord">
+        <div class="champ" id="champ" ></div>
+        <div class="build" id="mythic"></div>
+        <div class="build" id="boots"></div>
+        <div class="build" id="item1"></div>
+        <div class="build" id="item2"></div>
+        <div class="build" id="item3"></div>
+        <div class="build" id="item4"></div>
+        <div class="h2" id="champnaam"></div>
+    </div>
+    <div class="knoppen">
+        <button type="button" class="knop" onclick="klikChamp()" id="champknop">RANDOM CHAMP</button>
+        <button type="button" class="knop" onclick='klikBuild()' id="buildknop">RANDOM BUILD</button>
+    </div>
+    <div class="rol" id="rol" ></div>
+    <button type="button" class="rolknop" onclick="klikRole()" id="rolknop">RANDOM ROLE</button>
+</div>
+<script>
+    new randomleague()
+</script>
+</body>

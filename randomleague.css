@@ -1,0 +1,109 @@
+.bord{
+    margin: auto;            /* spelbord horizontaal centeren */
+    margin-top: 70px;        /* extra ruimte boven spelbord */
+    margin-bottom: 60px;     /* extra ruimte onder spelbord */
+    display: table;
+}
+
+.champ{
+    margin-left: 10px;
+    margin-right: 40px;
+    width: 180px;
+    height: 180px;
+    border: 3px solid #000;
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+.h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.rol{
+    width: 180px;
+    height: 180px;
+    border: 3px solid #000;
+    margin-left: 33%;
+    margin-right: 50px;
+    float: left;
+}
+
+.rolknop{
+    width: 180px;
+    height: 70px;
+    margin-top: 40px;
+    border: 3px solid #000;
+    text-align: center;  /* tekst in het midden */
+    padding: 12px 28px;  /* groter maken */
+    border-radius: 8px; /* ronde hoeken */
+    transition-duration: 0.4s;
+}
+
+.rolknop:hover{ /* zorgt ervoor dat de knop van kleur verandert als je erover hovert*/
+    background-color: blue;
+    color: white;
+}
+
+.build {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 113px;
+    height: 113px;
+    border: 2px solid #000;
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+.achtergrond {
+    background-image: url("afbeeldingen/background.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+.knoppen {
+    margin: auto; /* knoppen horizontaal centeren */
+    margin-top: 10px; /* extra ruimte boven knoppen */
+    margin-bottom: 20px; /* extra ruimte onder knoppen */
+    display: table;
+
+}
+
+
+.knop {
+    margin-right: 100px;
+    margin-left: 100px;
+    border: 3px solid #000;
+    float: left;
+    text-align: center;  /* tekst in het midden */
+    padding: 12px 28px;  /* groter maken */
+    border-radius: 8px; /* ronde hoeken */
+    transition-duration: 0.4s;
+}
+
+.knop:hover{ /* zorgt ervoor dat de knop van kleur verandert als je erover hovert*/
+    background-color: blue;
+    color: white;
+}
+
+.rugzijdebuild {
+    background: url("afbeeldingen/vraagteken.jpg");
+    background-size: 113px 113px;
+}
+
+.rugzijderol {
+    background: url("afbeeldingen/vraagteken.jpg");
+
+}
+
+.rugzijdechamp {
+    background: url("afbeeldingen/vraagteken.jpg");
+    background-size: 180px 180px;
+}
