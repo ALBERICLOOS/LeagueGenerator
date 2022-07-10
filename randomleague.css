@@ -1,4 +1,3 @@
-
 .champenrol{
     width: 180px;
     height: 180px;
@@ -8,11 +7,11 @@
     margin-right: 5%;
 }
 
-.h1{
-    text-align: center;
-    margin-top: 30px;
+.champenrolvak{
+    margin-top: 5%;
+    height: 40%;
+    width: 100%;
 }
-
 
 .build {
     margin-right: 20px;
@@ -24,6 +23,11 @@
     display: table;
 }
 
+.buildvak{
+    margin-left: 15%;
+    height: 23%;
+}
+
 .achtergrond {
     background-image: url("afbeeldingen/background.png");
     position: absolute;
@@ -31,19 +35,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-
-
-.champenrolvak{
-    margin-top: 5%;
-    height: 40%;
-    width: 100%;
-}
-
-.buildvak{
-    margin-left: 15%;
-    height: 23%;
 }
 
 .allesknop {
@@ -73,6 +64,11 @@
 .knop:hover{ /* zorgt ervoor dat de knop van kleur verandert als je erover hovert*/
     background-color: blue;
     color: white;
+}
+
+.h1{
+    text-align: center;
+    margin-top: 30px;
 }
 
 .rugzijdebuild {

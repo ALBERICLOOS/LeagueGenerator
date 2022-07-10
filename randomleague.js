@@ -12,6 +12,7 @@ class randomleague {
 
     }
 }
+
 const champions = [
     'aatrox.png',
     'ahri.png',
@@ -301,7 +302,6 @@ function klikChamp(){
     // naam van de champ
     document.getElementById("champknop").textContent = `${naarHoofdletter(champ.replace(".png", "").replace("_"," "))}`
 }
-
 
 function klikBuild(){
     let boot = boots[Math.floor(Math.random()*boots.length)]; // boots
