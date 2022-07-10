@@ -239,7 +239,7 @@ function klikChamp(){
     document.getElementById("champ").style.backgroundImage = `url(afbeeldingen/champs/${champ})`
     document.getElementById("champ").style.backgroundSize = "180px 180px"
     // naam van de champ
-    document.getElementById("champnaam").innerHTML = `${naarHoofdletter(champ.replace(".png", "").replace("_"," "))}`
+    document.getElementById("champknop").textContent = `${naarHoofdletter(champ.replace(".png", "").replace("_"," "))}`
 }
 
 
@@ -283,4 +283,10 @@ function klikRole(){
     document.getElementById("rol").classList.remove("rugzijde")
     document.getElementById("rol").style.backgroundImage = `url(afbeeldingen/roles/${rol})`
     document.getElementById("champ").style.backgroundSize = "180px 180px"
+}
+
+function allRandom(){
+    klikChamp()
+    klikBuild()
+    klikRole()
 }

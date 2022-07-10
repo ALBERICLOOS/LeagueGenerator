@@ -1,19 +1,11 @@
-.bord{
-    margin: auto;            /* spelbord horizontaal centeren */
-    margin-top: 70px;        /* extra ruimte boven spelbord */
-    margin-bottom: 60px;     /* extra ruimte onder spelbord */
-    display: table;
-}
 
-.champ{
-    margin-left: 10px;
-    margin-right: 40px;
+.champenrol{
     width: 180px;
     height: 180px;
     border: 3px solid #000;
     float: left;
-    display: block;
-    text-align: center;
+    margin-left: 15%;
+    margin-right: 5%;
 }
 
 .h1{
@@ -21,30 +13,6 @@
     margin-top: 30px;
 }
 
-.rol{
-    width: 180px;
-    height: 180px;
-    border: 3px solid #000;
-    margin-left: 33%;
-    margin-right: 50px;
-    float: left;
-}
-
-.rolknop{
-    width: 180px;
-    height: 70px;
-    margin-top: 40px;
-    border: 3px solid #000;
-    text-align: center;  /* tekst in het midden */
-    padding: 12px 28px;  /* groter maken */
-    border-radius: 8px; /* ronde hoeken */
-    transition-duration: 0.4s;
-}
-
-.rolknop:hover{ /* zorgt ervoor dat de knop van kleur verandert als je erover hovert*/
-    background-color: blue;
-    color: white;
-}
 
 .build {
     margin-right: 20px;
@@ -53,8 +21,7 @@
     height: 113px;
     border: 2px solid #000;
     float: left;
-    display: block;
-    text-align: center;
+    display: table;
 }
 
 .achtergrond {
@@ -68,20 +35,35 @@
 
 
 
-.knoppen {
-    margin: auto; /* knoppen horizontaal centeren */
-    margin-top: 10px; /* extra ruimte boven knoppen */
-    margin-bottom: 20px; /* extra ruimte onder knoppen */
-    display: table;
-
+.champenrolvak{
+    margin-top: 5%;
+    height: 40%;
+    width: 100%;
 }
 
+.buildvak{
+    margin-left: 15%;
+    height: 23%;
+}
+
+.allesknop {
+    border: 3px solid #000;
+    padding: 12px 28px; /* groter maken */
+    border-radius: 8px; /* ronde hoeken */
+    transition-duration: 0.4s;
+    text-align: center;
+    margin: auto;
+    display: grid;
+}
+
+.allesknop:hover{
+    background-color: blue;
+    color: white;
+}
 
 .knop {
-    margin-right: 100px;
-    margin-left: 100px;
-    border: 3px solid #000;
     float: left;
+    border: 3px solid #000;
     text-align: center;  /* tekst in het midden */
     padding: 12px 28px;  /* groter maken */
     border-radius: 8px; /* ronde hoeken */
