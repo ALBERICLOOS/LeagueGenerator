@@ -5,11 +5,12 @@
     float: left;
     margin-left: 15%;
     margin-right: 5%;
+    display: block;
 }
 
 .champenrolvak{
     margin-top: 5%;
-    height: 40%;
+    height: 30%;
     width: 100%;
 }
 
@@ -25,7 +26,8 @@
 
 .buildvak{
     margin-left: 15%;
-    height: 23%;
+    height: 20%;
+    width: auto;
 }
 
 .achtergrond {
@@ -66,6 +68,21 @@
     color: white;
 }
 
+.h3{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 20%;
+}
+
+.h2{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 5%;
+    margin-right: 14%;
+    margin-left: 15%;
+}
+
 .h1{
     text-align: center;
     margin-top: 30px;
@@ -84,4 +101,34 @@
 .rugzijdechamp {
     background: url("afbeeldingen/vraagteken.jpg");
     background-size: 180px 180px;
+}
+
+.hovertext{
+    position: relative;
+}
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 113px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 120%;
+}
+
+.hovertext:hover:before{
+    opacity: 1;
+    visibility: visible;
+}
+
+.hovertext:after{
+    content: attr(textContent);
 }

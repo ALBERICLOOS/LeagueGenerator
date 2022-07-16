@@ -294,13 +294,21 @@ function naarHoofdletter(string){
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+function allesNaarHoofdletter(string){
+    let resultaat = ''
+    for (let i = 0; i < string.length; i++){
+        resultaat += string.charAt(i).toUpperCase()
+    }
+    return resultaat
+}
+
 function klikChamp(){
     let champ = champions[Math.floor(Math.random()*champions.length)]; // de champ kiezen
     document.getElementById("champ").classList.remove("rugzijde")
     document.getElementById("champ").style.backgroundImage = `url(afbeeldingen/champs/${champ})`
     document.getElementById("champ").style.backgroundSize = "180px 180px"
     // naam van de champ
-    document.getElementById("champknop").textContent = `${naarHoofdletter(champ.replace(".png", "").replace("_"," "))}`
+    document.getElementById("champnaam").textContent = allesNaarHoofdletter(champ.replace(".png", "").replace("_"," "))
 }
 
 function klikBuild(){
@@ -308,10 +316,15 @@ function klikBuild(){
     document.getElementById("boots").classList.remove("rugzijde")
     document.getElementById("boots").style.backgroundImage = `url(afbeeldingen/boots/${boot})`
     document.getElementById("boots").style.backgroundSize = "113px 113px"
+    // de hover van de boots veranderen
+    document.getElementById("boothover").setAttribute('data-hover', boot.replace(".png", "").replace("_", " "))
     let mythic = mythics[Math.floor(Math.random()*mythics.length)]; // mythic item
     document.getElementById("mythic").classList.remove("rugzijde")
     document.getElementById("mythic").style.backgroundImage = `url(afbeeldingen/mythics/${mythic})`
-    document.getElementById("boots").style.backgroundSize = "113px 113px"
+    document.getElementById("mythic").style.backgroundSize = "113px 113px"
+    //de hover van de mythic veranderen
+    document.getElementById("mythichover").setAttribute('data-hover', mythic.replace(".png", "").replace("_", " "))
+
     let itemslijst = [] // lijst maken voor de niet mythic items
     // zorgen dat er altijd 4 items in de lijst zitten
     while (!(itemslijst.length === 4)){
@@ -324,18 +337,30 @@ function klikBuild(){
     document.getElementById("item1").classList.remove("rugzijde")
     document.getElementById("item1").style.backgroundImage = `url(afbeeldingen/items/${itemslijst[0]})`
     document.getElementById("item1").style.backgroundSize = "113px 113px"
+    // hover veranderen
+    document.getElementById("item1hover").setAttribute('data-hover', itemslijst[0].replace(".png", "").replace("_", " "))
+
     // tweede item
     document.getElementById("item2").classList.remove("rugzijde")
     document.getElementById("item2").style.backgroundImage = `url(afbeeldingen/items/${itemslijst[1]})`
     document.getElementById("item2").style.backgroundSize = "113px 113px"
+    // hover veranderen
+    document.getElementById("item2hover").setAttribute('data-hover', itemslijst[1].replace(".png", "").replace("_", " "))
+
     // derde item
     document.getElementById("item3").classList.remove("rugzijde")
     document.getElementById("item3").style.backgroundImage = `url(afbeeldingen/items/${itemslijst[2]})`
     document.getElementById("item3").style.backgroundSize = "113px 113px"
+    // hover veranderen
+    document.getElementById("item3hover").setAttribute('data-hover', itemslijst[2].replace(".png", "").replace("_", " "))
+
     // vierde item
     document.getElementById("item4").classList.remove("rugzijde")
     document.getElementById("item4").style.backgroundImage = `url(afbeeldingen/items/${itemslijst[3]})`
     document.getElementById("item4").style.backgroundSize = "113px 113px"
+    // hover veranderen
+    document.getElementById("item4hover").setAttribute('data-hover', itemslijst[3].replace(".png", "").replace("_", " "))
+
 }
 
 function klikRole(){
@@ -343,6 +368,8 @@ function klikRole(){
     document.getElementById("rol").classList.remove("rugzijde")
     document.getElementById("rol").style.backgroundImage = `url(afbeeldingen/roles/${rol})`
     document.getElementById("champ").style.backgroundSize = "180px 180px"
+    // naam van de rol veranderen
+    document.getElementById("rolnaam").textContent = allesNaarHoofdletter(rol.replace(".png", ""))
 }
 
 function allRandom(){

@@ -23,24 +23,37 @@
 <div class="achtergrond" >
     <div class="h1">RANDOM LEAGUE GENERATOR</div>
     <div class="champenrolvak" >
-        <div class="champenrol" id="rol" ></div>
-        <button type="button" class="knop" onclick="klikRole()" id="rolknop">RANDOM ROLE</button>
         <div class="champenrol" id="champ" ></div>
         <button type="button" class="knop" onclick="klikChamp()" id="champknop">RANDOM CHAMP</button>
+        <div class="champenrol" id="rol" ></div>
+        <button type="button" class="knop" onclick="klikRole()" id="rolknop">RANDOM ROLE</button>
     </div>
+    <div id="champnaam" class="h2">CHAMPION</div>
+    <div id="rolnaam" class="h3">ROLE</div>
     <div class="buildvak">
-        <div class="build" id="mythic"></div>
-        <div class="build" id="boots"></div>
-        <div class="build" id="item1"></div>
-        <div class="build" id="item2"></div>
-        <div class="build" id="item3"></div>
-        <div class="build" id="item4"></div>
+        <div class="hovertext" id="mythichover" data-hover="vraagteken">
+            <div class="build" id="mythic"></div>
+        </div>
+        <div class="hovertext" id="boothover" data-hover="vraagteken">
+            <div class="build" id="boots"></div>
+        </div>
+        <div class="hovertext" id="item1hover" data-hover="vraagteken">
+            <div class="build" id="item1"></div>
+        </div>
+        <div class="hovertext" id="item2hover" data-hover="vraagteken">
+            <div class="build" id="item2"></div>
+        </div>
+        <div class="hovertext" id="item3hover" data-hover="vraagteken">
+            <div class="build" id="item3"></div>
+        </div>
+        <div class="hovertext" id="item4hover" data-hover="vraagteken">
+            <div class="build" id="item4"></div>
+        </div>
         <button type="button" class="knop" onclick='klikBuild()' id="buildknop">RANDOM BUILD</button>
     </div>
     <div class="button-div">
         <button type="button" class="allesknop" id="allesknop" onclick="allRandom()">ALL RANDOM</button>
     </div>
-
 </div>
 <script>
     new randomleague()
